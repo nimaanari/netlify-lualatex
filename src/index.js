@@ -55,7 +55,7 @@ const installTexlive = async (basePath) => {
 };
 
 const findTexlive = async () => {
-    const basePath = process.env.NETLIFY_BUILD_BASE ? path.join(process.env.NETLIFY_BUILD_BASE, 'cache', '') : path.join(os.tmpdir(), 'netlify-tex');
+    const basePath = process.env.NETLIFY_BUILD_BASE ? path.join(process.env.NETLIFY_BUILD_BASE, 'cache', 'netlify-lualatex') : path.join(os.tmpdir(), 'netlify-lualatex');
     if (searchForLocalTexlive && !process.env.NETLIFY_BUILD_BASE){
         try{
             const texPath = await fs.realpath(await which('tex'));
