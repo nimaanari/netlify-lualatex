@@ -1,5 +1,5 @@
 {
-  "name": "netlify-tex",
+  "name": "netlify-lualatex",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nimaanari/netlify-tex.git"
+    "url": "git+https://github.com/nimaanari/netlify-lualatex.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nimaanari/netlify-tex/issues"
+    "url": "https://github.com/nimaanari/netlify-lualatex/issues"
   },
-  "homepage": "https://github.com/nimaanari/netlify-tex#readme",
+  "homepage": "https://github.com/nimaanari/netlify-lualatex#readme",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
