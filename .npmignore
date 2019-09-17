@@ -1,5 +1,6 @@
 .DS_Store
 src/
+/test.js
 
 # Logs
 logs
