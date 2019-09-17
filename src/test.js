@@ -1,20 +1,16 @@
 import compile from './index'
+import path from 'path'
 
 const texSource = `
 \\documentclass{article}
-\\usepackage{tikz}
 \\usepackage{amsmath}
-\\usepackage{cleveref}
 \\begin{document}
-    Hello there. This is some test. \\cref{eq:test}
-    \\begin{equation}\\label{eq:test}
+    Hello there. This is some test.
+    \\[
         x^2+1=\\int_0^\\infty y\\cdot dy
-    \\end{equation}
+    \\]
 \\end{document}`;
 
-// findTexlive().then(result => {
-//     console.log(result);
-// });
-compile(texSource, './public/some.pdf').then(() => {
+compile(texSource, path.resolve('some.pdf')).then(() => {
     console.log('Compiled successfully!');
 });

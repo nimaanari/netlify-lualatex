@@ -63,8 +63,12 @@ const findTexlive = async () => {
         }
         catch{}
     }
-    await fs.ensureDir(basePath);
-    await installTexlive(basePath);
+    const flagPath = path.join(basePath, 'netlify-lualatex.done');
+    if (!await fs.exists(flagPath)){
+        await fs.ensureDir(basePath);
+        await installTexlive(basePath);
+        await fs.writeFile(flagPath, `${Date.now()}`);
+    }
     return path.join(basePath, 'latest', 'bin', arch);
 };
 
