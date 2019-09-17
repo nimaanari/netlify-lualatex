@@ -15,6 +15,6 @@ const texSource = `
 // findTexlive().then(result => {
 //     console.log(result);
 // });
-compile(texSource, '/tmp/some.pdf').then(() => {
+compile(texSource, './public/some.pdf').then(() => {
     console.log('Compiled successfully!');
 });
