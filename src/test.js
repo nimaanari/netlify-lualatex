@@ -11,6 +11,6 @@ const texSource = `
     \\]
 \\end{document}`;
 
-compile(path.resolve('some.pdf'), texSource).then(() => {
+compile(texSource, path.resolve('some.pdf')).then(() => {
     console.log('Compiled successfully!');
 });
