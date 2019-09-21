@@ -72,7 +72,7 @@ const findTexlive = async () => {
     return path.join(basePath, 'latest', 'bin', arch);
 };
 
-const compile = async (texSource, output, cwd=process.cwd()) => {
+const compile = async (output, texSource, cwd=process.cwd()) => {
     const binPath = await findTexlive();
     const { path: tmpPath, cleanup } = await tmp.dir({ unsafeCleanup: true });
     try{
