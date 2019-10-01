@@ -1,6 +1,6 @@
 {
   "name": "netlify-lualatex",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Automatically install texlive and run lualatex to generate PDF files. The installation is cached in Netlify build environments.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "keywords": ["netlify", "latex", "lualatex"],
   "author": "Nima Anari",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nimaanari/netlify-lualatex/issues"
   },
